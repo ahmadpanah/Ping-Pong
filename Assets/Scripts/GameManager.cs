@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,14 +22,28 @@ public class GameManager : MonoBehaviour
 
   public bool AIGame;
 
+  public int maxScore = 3;
+
+  public void CheckVictory()
+  {
+      if (player1Score == maxScore) {
+          SceneManager.LoadScene("Victory2");
+      }
+      if (player2Score == maxScore) {
+          SceneManager.LoadScene("Victory1");
+      }
+  }
+
     public void player1Scored() {
         player1Score++;
+        CheckVictory();
         player1Text.text = player1Score.ToString();
         ResetPosition();
     }
 
      public void player2Scored() {
         player2Score++;
+        CheckVictory();
         player2Text.text = player2Score.ToString();
         ResetPosition();
     }
