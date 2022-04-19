@@ -159,6 +159,8 @@ MonoBehaviour:
   player2Goal: {fileID: 150427648}
   player1Text: {fileID: 1152180821}
   player2Text: {fileID: 1714025240}
+  AIGame: 0
+  maxScore: 3
 --- !u!4 &2108416
 Transform:
   m_ObjectHideFlags: 0
@@ -444,7 +446,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3333427, g: 0.8962264, b: 0.087931626, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -944,7 +946,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8396226, g: 0.12198288, b: 0.43457565, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
